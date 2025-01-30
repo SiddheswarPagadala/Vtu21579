@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Click with Popup</title>
+    <script type="text/javascript">
+        function showAlert(event) {
+            event.preventDefault();  // Prevent the default action (navigation)
+            alert("You clicked on a link!");
+            window.location.href = event.target.href;  // Redirect to the URL after the alert
+        }
+    </script>
+</head>
+</html>
